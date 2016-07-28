@@ -56,8 +56,15 @@ Each resource endpoint should begin with: `/api/resourceName`
 
 You use a tool like `postman` to test your API endpoints.
 
+## Document your API
+
+* Document your API using [apidoc comments](http://apidocjs.com/)
+* [Generate the HTML documentation](https://www.npmjs.com/package/apidoc) and static serve from the root of your API
+* Deploy!
+
 # Deploy!
 
+After deploying, update this readme with your deployed URL.
 Go to the heroku dashboard and copy the git url from the heroku app you created in the DB warmup.
 
 Add the heroku remote to this repo:
@@ -67,3 +74,11 @@ Add the heroku remote to this repo:
 Add/commit your changes, then push to heroku:
 
 `git push heroku master`
+
+# Stretch
+
+## JWT Authentication
+
+* Implement JWT Authentication - DO NOT use Passport
+* Protect all routes with custom JWT middleware
+* Update apidoc comments to include authentication instructions
